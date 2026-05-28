@@ -147,7 +147,13 @@ img {
   font-size: 1.05rem;
   color: var(--slate);
   max-width: 560px;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1.75rem;
+}
+
+.hero-fine {
+  font-size: 0.8rem;
+  color: var(--slate);
+  margin-top: 0.75rem;
 }
 
 .btn {
