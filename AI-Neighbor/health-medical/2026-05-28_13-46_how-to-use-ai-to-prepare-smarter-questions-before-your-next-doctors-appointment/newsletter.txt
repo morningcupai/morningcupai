@@ -1,0 +1,20 @@
+SUBJECT LINE:
+The one thing to do the night before your next doctor's appointment.
+SUBTITLE:
+How a free AI tool can help you walk in prepared, confident, and ready to ask the right questions.
+OPENING HOOK:
+You know that feeling when you leave the doctor's office and suddenly remember the three things you forgot to ask? You're back in the parking lot, prescription in hand, and it hits you. There was something about that new medication. Something about the test results from last month. It happens to almost everyone, and it doesn't have to.
+MAIN TOPIC:
+Most doctor appointments last about fifteen minutes. That is not a lot of time to cover everything on your mind, especially if you have multiple conditions, take several medications, or have been worrying about something for weeks. The good news is that a little preparation the night before can completely change how that appointment feels.
+Here is what you do. The evening before your appointment, open ChatGPT or Claude and tell it a little about your situation. Tell it your age, your main health concerns, the medications you take, and what you are going in for. Then ask it to help you put together a short list of questions to bring to your appointment.
+The AI will not diagnose you. It is not your doctor. But it is remarkably good at helping you organize your thoughts, put your concerns into clear words, and think of questions you might not have thought to ask on your own. Things like what are the side effects I should watch for, is there a generic version of this medication, and what happens if we do not treat this right away.
+Print out your list or keep it on your phone. Hand it to your doctor at the start of the appointment and say here are the things I want to make sure we cover today. Most doctors genuinely appreciate a prepared patient. It makes the appointment more efficient for both of you and means you leave with real answers instead of a lingering feeling that you forgot something important.
+Practical takeaway: The night before your next appointment, spend ten minutes with AI putting together your question list. You will walk in feeling more like a partner in your own healthcare and less like someone just along for the ride.
+THIS WEEKS PROMPT:
+Open ChatGPT or Claude and paste this in, filling in your own details:
+I am a [your age] year old adult. I take the following medications: [list them]. I am going to the doctor for [reason for visit]. I have also been concerned about [any other health worries]. Can you help me put together a clear, organized list of questions to bring to my appointment so I make the most of my time with my doctor?
+SCAM WATCH:
+A new scam is targeting older adults through fake health insurance and Medicare calls claiming your plan is being cancelled due to an AI audit of your records. Medicare does not use AI to audit individual accounts and will never call you to demand information to keep your coverage active. If you receive a call like this hang up immediately and call Medicare directly at 1-800-MEDICARE to verify your coverage status.
+CLOSING:
+You deserve to feel heard and prepared every single time you walk into a doctor's office. A little preparation goes a long way and now you have a tool that makes that preparation easy. Bring your list to your next appointment and see how different it feels to walk in ready.
+Kitchen Table AI is here every week with one practical tip you can use today. See you next Thursday.

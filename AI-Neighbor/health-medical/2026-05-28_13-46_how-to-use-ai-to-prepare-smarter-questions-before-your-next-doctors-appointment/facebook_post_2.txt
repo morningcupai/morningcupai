@@ -1,0 +1,6 @@
+HOOK:
+Your doctor has about fifteen minutes with you. Are you making the most of them?
+BODY:
+Most people leave appointments feeling like they barely scratched the surface of what they wanted to discuss. AI can help you change that. A ten minute preparation session the night before means you walk in with a clear list of questions, organized thoughts, and the confidence to actually have a real conversation with your doctor.
+CTA:
+We show you exactly how in this week's free Kitchen Table AI newsletter. Link in bio.

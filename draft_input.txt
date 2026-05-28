@@ -1,0 +1,21 @@
+SUBJECT LINE: {subject}
+
+OPENING HOOK:
+{opening_hook}
+
+MAIN TOPIC:
+{main_topic}
+
+YOUR TAKEAWAY:
+{takeaway}
+
+THIS WEEK'S PROMPT:
+{prompt}
+
+SCAM WATCH:
+{scam_watch}
+
+WARM CLOSING:
+{closing}
+
+Your AI Neighbor
