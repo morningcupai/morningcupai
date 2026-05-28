@@ -375,6 +375,75 @@ img {
 }
 
 /* ===========================
+   FEATURED POSTS (home page)
+   =========================== */
+
+.featured-section {
+  padding: 3rem 1.5rem;
+  background: var(--white);
+}
+
+.featured-header {
+  max-width: var(--max-w);
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.featured-header .section-label {
+  margin: 0;
+  text-align: left;
+}
+
+.featured-all {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy);
+  text-decoration: none;
+  border-bottom: 2px solid var(--navy);
+  padding-bottom: 1px;
+  white-space: nowrap;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.featured-all:hover {
+  color: var(--slate);
+  border-color: var(--slate);
+}
+
+.featured-scroll {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.75rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+.featured-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.featured-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.featured-scroll::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
+}
+
+.featured-card {
+  min-width: 300px;
+  max-width: 340px;
+  flex-shrink: 0;
+}
+
+/* ===========================
    BLOG PAGE
    =========================== */
 
