@@ -628,6 +628,102 @@ img {
 }
 
 /* ===========================
+   SUBSCRIBE CTA BANNER
+   =========================== */
+
+.subscribe-cta {
+  background: #2A3F55;
+  padding: 60px 1.5rem;
+  text-align: center;
+}
+
+.subscribe-cta-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.subscribe-cta-eyebrow {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #F5C842;
+  margin-bottom: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.subscribe-cta h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.subscribe-cta-sub {
+  font-size: 17px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.subscribe-cta-form {
+  display: flex;
+  gap: 0.625rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.subscribe-cta-form input[type="email"] {
+  flex: 1 1 260px;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  color: #2A3F55;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+.subscribe-cta-form input[type="email"]::placeholder {
+  color: #9BAAB8;
+}
+
+.subscribe-cta-form button {
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  background: #F5C842;
+  color: #2A3F55;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.subscribe-cta-form button:hover {
+  background: #e6b82e;
+}
+
+.subscribe-cta-fine {
+  margin-top: 1rem;
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+}
+
+@media (max-width: 540px) {
+  .subscribe-cta-form input[type="email"],
+  .subscribe-cta-form button {
+    flex: 1 1 100%;
+  }
+}
+
+/* ===========================
    UTILITY
    =========================== */
 
