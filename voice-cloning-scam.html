@@ -370,6 +370,16 @@
           <li>The voice sounds real but the conversation feels scripted</li>
         </ul>
 
+        <!-- QUICK CHECK PROMPT -->
+        <div class="prompt-component">
+          <div class="prompt-component-header">
+            <span class="prompt-component-label">Quick Check</span>
+            <button class="prompt-copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+          </div>
+          <p class="prompt-component-intro">Use this to verify if a call you received might have been a scam:</p>
+          <div class="prompt-component-text">I just received a suspicious phone call from someone claiming to be [family member]. They said [describe what happened]. Can you help me figure out if this sounds like an AI voice cloning scam and what I should do next?</div>
+        </div>
+
         <h2 id="code-word">The Defense That Costs Nothing</h2>
 
         <p>The single most effective protection costs nothing and takes two minutes to set up. Create a family code word.</p>
@@ -398,10 +408,13 @@
       <hr class="post-divider">
 
       <!-- AI PROMPT CALLOUT -->
-      <div id="ai-prompt" class="callout-prompt">
-        <p class="callout-label">This Week's AI Prompt</p>
-        <p class="callout-intro">Open ChatGPT or Claude and paste this in to create a family safety plan you can print and share:</p>
-        <p class="prompt-text">I want to protect my family from AI voice cloning scams. Can you help me create a simple one-page family safety plan that includes: our agreed code word (I will fill this in), the warning signs to watch for on a suspicious call, the exact steps to take if we receive a suspicious call, and a list of real phone numbers for family members to call back directly. Make it simple enough to print and put on the refrigerator.</p>
+      <div id="ai-prompt" class="prompt-component">
+        <div class="prompt-component-header">
+          <span class="prompt-component-label">This Week's AI Prompt</span>
+          <button class="prompt-copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+        </div>
+        <p class="prompt-component-intro">Paste this directly into ChatGPT or Claude to create a printable family safety plan:</p>
+        <div class="prompt-component-text">I want to protect my family from AI voice cloning scams. Can you help me create a simple one-page family safety plan that includes: our agreed code word (I will fill this in), the warning signs to watch for on a suspicious call, the exact steps to take if we receive a suspicious call, and a list of real phone numbers for family members to call back directly. Make it simple enough to print and put on the refrigerator.</div>
       </div>
 
       <hr class="post-divider">
@@ -508,6 +521,14 @@
       window.addEventListener('load', updateProgress);
       updateProgress();
     })();
+
+    function copyPrompt(btn) {
+      var text = btn.closest('.prompt-component').querySelector('.prompt-component-text').textContent.trim();
+      navigator.clipboard.writeText(text).then(function() {
+        btn.textContent = '✓ Copied!';
+        setTimeout(function() { btn.textContent = 'Copy Prompt'; }, 2000);
+      });
+    }
 
     function copyLink(btn) {
       navigator.clipboard.writeText('https://morningcupai.com/voice-cloning-scam.html').then(function() {
