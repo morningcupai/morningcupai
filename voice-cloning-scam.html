@@ -455,14 +455,20 @@
   <script>
     (function() {
       var bar = document.getElementById('reading-progress');
+      if (!bar) return;
       function updateProgress() {
         if (window.innerWidth < 768) { bar.style.width = '0%'; return; }
-        var scrolled = window.scrollY || document.documentElement.scrollTop;
-        var total = document.documentElement.scrollHeight - window.innerHeight;
-        bar.style.width = total > 0 ? (scrolled / total * 100) + '%' : '0%';
+        var scrolled = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var total = Math.max(
+          document.body.scrollHeight,
+          document.documentElement.scrollHeight
+        ) - window.innerHeight;
+        bar.style.width = total > 0 ? Math.min(scrolled / total * 100, 100) + '%' : '0%';
       }
       window.addEventListener('scroll', updateProgress, { passive: true });
       window.addEventListener('resize', updateProgress);
+      window.addEventListener('load', updateProgress);
+      updateProgress();
     })();
 
     function copyLink(btn) {
