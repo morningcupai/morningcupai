@@ -62,7 +62,12 @@ img {
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: none;
+  transition: box-shadow 0.25s ease;
+}
+
+.site-nav.nav-scrolled {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.25);
 }
 
 .nav-inner {
