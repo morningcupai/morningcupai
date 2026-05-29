@@ -302,6 +302,19 @@
         </ol>
       </nav>
 
+      <!-- SHARE (top) -->
+      <div class="post-share" style="margin-top:0; padding-top:0; border-top:none; margin-bottom:1.5rem;">
+        <h2>Know someone who needs to see this?</h2>
+        <div class="share-buttons">
+          <a class="share-btn"
+             href="https://www.facebook.com/sharer/sharer.php?u=https://morningcupai.com/voice-cloning-scam.html"
+             target="_blank" rel="noopener noreferrer">Share on Facebook</a>
+          <button class="share-btn copy-link-btn" onclick="copyLink(this)">Copy link</button>
+          <a class="share-btn"
+             href="mailto:?subject=Important%3A%20AI%20voice%20scam%20warning&body=I%20thought%20you%20should%20read%20this%3A%20https%3A%2F%2Fmorningcupai.com%2Fvoice-cloning-scam.html">Send by email</a>
+        </div>
+      </div>
+
       <!-- BODY -->
       <div class="post-body">
 
@@ -345,6 +358,19 @@
         <p>You are not naive for almost falling for this. These scams are designed by professionals who study human psychology. The California mother who lost thousands is intelligent, caring, and alert — and she was still fooled. Knowing this technology exists is your greatest protection. Set up your code word today. Forward this to someone you love. Morning Cup AI is here every Thursday to keep you one step ahead.</p>
       </div>
 
+      <!-- SHARE (bottom) -->
+      <div class="post-share">
+        <h2>Know someone who needs to see this?</h2>
+        <div class="share-buttons">
+          <a class="share-btn"
+             href="https://www.facebook.com/sharer/sharer.php?u=https://morningcupai.com/voice-cloning-scam.html"
+             target="_blank" rel="noopener noreferrer">Share on Facebook</a>
+          <button class="share-btn copy-link-btn" onclick="copyLink(this)">Copy link</button>
+          <a class="share-btn"
+             href="mailto:?subject=Important%3A%20AI%20voice%20scam%20warning&body=I%20thought%20you%20should%20read%20this%3A%20https%3A%2F%2Fmorningcupai.com%2Fvoice-cloning-scam.html">Send by email</a>
+        </div>
+      </div>
+
       <!-- RELATED POSTS -->
       <div class="post-related">
         <h2>Keep reading</h2>
@@ -371,19 +397,6 @@
         </div>
       </div>
 
-      <!-- SHARE -->
-      <div class="post-share">
-        <h2>Know someone who needs to see this?</h2>
-        <div class="share-buttons">
-          <a class="share-btn"
-             href="https://www.facebook.com/sharer/sharer.php?u=https://morningcupai.com/voice-cloning-scam.html"
-             target="_blank" rel="noopener noreferrer">Share on Facebook</a>
-          <button class="share-btn" id="copy-link-btn" onclick="copyLink()">Copy link</button>
-          <a class="share-btn"
-             href="mailto:?subject=Important%3A%20AI%20voice%20scam%20warning&body=I%20thought%20you%20should%20read%20this%3A%20https%3A%2F%2Fmorningcupai.com%2Fvoice-cloning-scam.html">Send by email</a>
-        </div>
-      </div>
-
     </div>
   </main>
 
@@ -401,9 +414,8 @@
 
   <script src="nav.js"></script>
   <script>
-    function copyLink() {
+    function copyLink(btn) {
       navigator.clipboard.writeText('https://morningcupai.com/voice-cloning-scam.html').then(function() {
-        var btn = document.getElementById('copy-link-btn');
         btn.textContent = 'Copied!';
         setTimeout(function() { btn.textContent = 'Copy link'; }, 2000);
       });
