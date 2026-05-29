@@ -21,52 +21,60 @@
     }
 
     .post-back {
-      display: inline-block;
+      display: block;
       font-size: 0.85rem;
       color: var(--slate);
       text-decoration: none;
-      margin-bottom: 2rem;
+      margin-bottom: 8px;
       letter-spacing: 0.02em;
       transition: color 0.15s;
     }
     .post-back:hover { color: var(--navy); }
     .post-back::before { content: "← "; }
 
-    .post-pillar {
-      display: inline-block;
-      background: var(--navy);
-      color: var(--white);
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      padding: 0.25rem 0.75rem;
-      border-radius: 20px;
-      margin-bottom: 1rem;
-    }
-
     .post-title {
-      font-size: clamp(1.7rem, 4vw, 2.4rem);
-      line-height: 1.25;
-      margin-bottom: 0.75rem;
+      font-size: 42px;
+      line-height: 1.2;
+      margin: 8px 0;
     }
 
     .post-subtitle {
-      font-size: 1.1rem;
+      font-size: 20px;
       color: var(--slate);
-      margin-bottom: 1.25rem;
+      margin: 8px 0;
       line-height: 1.5;
     }
 
     .post-meta {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      flex-wrap: wrap;
+      margin: 8px 0 0;
+    }
+    .post-meta .post-pillar {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.65rem;
+      border-radius: 20px;
+      margin: 0;
+    }
+    .post-meta .meta-sep {
+      color: var(--slate);
+      margin: 0 0.4rem;
+      font-size: 0.82rem;
+    }
+    .post-meta .meta-date,
+    .post-meta .meta-read {
       font-size: 0.82rem;
       color: var(--slate);
       text-transform: uppercase;
       letter-spacing: 0.06em;
-      margin-bottom: 2rem;
-    }
-    .post-meta span + span::before {
-      content: " · ";
     }
 
     .post-divider {
@@ -259,6 +267,7 @@
 
     @media (max-width: 700px) {
       .post-wrap { padding: 2rem 1.25rem 4rem; }
+      .post-title { font-size: 32px; }
       .callout-prompt,
       .callout-scam { padding: 1.25rem 1.25rem; }
     }
@@ -297,15 +306,16 @@
 
       <a href="archive.html" class="post-back">Back to Archive</a>
 
-      <div class="post-pillar">Scam Protection</div>
-
       <h1 class="post-title">Your grandson called. He needed money. But it wasn't him.</h1>
       <p class="post-subtitle">How AI voice cloning scams work — and the exact steps that stop them every time.</p>
 
-      <p class="post-meta">
-        <span>January 7, 2026</span>
-        <span>2 min read</span>
-      </p>
+      <div class="post-meta">
+        <span class="post-pillar">Scam Protection</span>
+        <span class="meta-sep">·</span>
+        <span class="meta-date">January 7, 2026</span>
+        <span class="meta-sep">·</span>
+        <span class="meta-read">2 min read</span>
+      </div>
 
       <hr class="post-divider">
 
