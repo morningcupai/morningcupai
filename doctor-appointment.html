@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The one thing to do the night before your next doctor's appointment. — Morning Cup AI</title>
+  <meta name="description" content="How to use AI to prepare smarter questions before your next doctor visit — and walk in feeling confident every time." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- OG TAGS — update title, description, image and url for every new article -->
+  <meta property="og:title" content="The one thing to do the night before your next doctor's appointment.">
+  <meta property="og:description" content="How to use AI to prepare smarter questions before your next doctor visit — and walk in feeling confident every time.">
+  <meta property="og:image" content="https://morningcupai.com/Images/doctor-appointment.jpg">
+  <meta property="og:url" content="https://morningcupai.com/doctor-appointment.html">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    /* ── Post-specific styles ── */
+
+    .post-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 5rem;
+    }
+
+    .post-back {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--slate);
+      text-decoration: none;
+      margin-bottom: 8px;
+      letter-spacing: 0.02em;
+      transition: color 0.15s;
+    }
+    .post-back:hover { color: var(--navy); }
+    .post-back::before { content: "← "; }
+
+    .post-title {
+      font-size: 42px;
+      line-height: 1.2;
+      margin: 8px 0;
+    }
+
+    .post-subtitle {
+      font-size: 20px;
+      color: var(--slate);
+      margin: 8px 0;
+      line-height: 1.5;
+    }
+
+    .post-meta {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      flex-wrap: wrap;
+      margin: 8px 0 0;
+    }
+    .post-meta .post-pillar {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.65rem;
+      border-radius: 20px;
+      margin: 0;
+    }
+    .post-meta .meta-sep {
+      color: var(--slate);
+      margin: 0 0.4rem;
+      font-size: 0.82rem;
+    }
+    .post-meta .meta-date,
+    .post-meta .meta-read {
+      font-size: 0.82rem;
+      color: var(--slate);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .post-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2rem 0;
+    }
+    .post-divider--slate {
+      border-top-color: #E2EAF2;
+      margin: 1.5rem 0;
+    }
+
+    .post-body p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 1.4rem;
+    }
+
+    /* ── Section labels ── */
+    .callout-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+
+    /* ── Scam Watch callout (amber) ── */
+    .callout-scam {
+      background: #FEF3C7;
+      border-left: 4px solid #D97706;
+      border-radius: var(--radius);
+      padding: 1.75rem 2rem;
+      margin: 2rem 0;
+    }
+    .callout-scam .callout-label {
+      color: #92400E;
+    }
+    .callout-scam p {
+      font-size: 0.95rem;
+      color: #451A03;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* ── Related posts ── */
+    .post-related {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+    .post-related h2 {
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin-bottom: 1.25rem;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 540px) {
+      .related-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Share section ── */
+    .post-share {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+    .post-share h2 {
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+    .share-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .share-btn {
+      display: inline-block;
+      font-family: inherit;
+      font-size: 1.0625rem;
+      font-weight: 600;
+      color: var(--navy);
+      background: var(--cream);
+      border: 2px solid var(--navy);
+      border-radius: 6px;
+      padding: 0.55rem 1.25rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.15s, color 0.15s;
+      white-space: nowrap;
+    }
+    .share-btn:hover {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    /* ── Table of contents ── */
+    .post-toc {
+      background: var(--cream);
+      border-left: 4px solid var(--navy);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.75rem;
+      margin: 2rem 0;
+    }
+    .post-toc p {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin: 0 0 0.75rem;
+    }
+    .post-toc ol {
+      margin: 0;
+      padding-left: 1.4rem;
+      list-style: decimal;
+    }
+    .post-toc li {
+      font-size: 1.0625rem;
+      line-height: 1.8;
+    }
+    .post-toc a {
+      color: var(--navy);
+      text-decoration: none;
+    }
+    .post-toc a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Closing section ── */
+    .post-closing {
+      background: var(--cream);
+      border-radius: var(--radius);
+      padding: 2rem 1.75rem;
+      margin-top: 2rem;
+    }
+    .post-closing p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #333;
+      margin: 0 0 1rem;
+    }
+    .post-closing p:last-child { margin: 0; }
+
+    /* ── Hero image with gradient overlay ── */
+    .post-hero-wrap {
+      position: relative;
+    }
+    .post-hero-wrap::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 30%;
+      background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.55));
+      pointer-events: none;
+    }
+    .post-hero-wrap .post-hero-img {
+      height: 420px;
+    }
+
+    @media (max-width: 700px) {
+      .post-wrap { padding: 2rem 1.25rem 4rem; }
+      .post-title { font-size: 32px; }
+      .callout-scam { padding: 1.25rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/home" class="nav-brand" aria-label="Morning Cup AI home">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="10" width="16" height="13" rx="2" fill="#FDF6EC" />
+          <path d="M20 13h3a3 3 0 0 1 0 6h-3" stroke="#FDF6EC" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <rect x="4" y="23" width="16" height="2" rx="1" fill="#C8D4DF" />
+          <path d="M10 7 Q10.5 4 12 5 Q13.5 6 14 3" stroke="#C8D4DF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </svg>
+        Morning Cup AI
+      </a>
+      <ul class="nav-links">
+        <li><a href="/home">Home</a></li>
+        <li><a href="archive.html" class="active">Archive</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- POST HERO IMAGE -->
+  <div class="post-hero-wrap">
+    <img src="Images/doctor-appointment.jpg" alt="Using AI to prepare for a doctor's appointment" class="post-hero-img" />
+  </div>
+
+  <!-- POST -->
+  <main>
+    <div class="post-wrap">
+
+      <a href="archive.html" class="post-back">Back to Archive</a>
+
+      <h1 class="post-title">The one thing to do the night before your next doctor's appointment.</h1>
+      <p class="post-subtitle">How to use AI to walk in prepared, ask better questions, and finally feel heard by your doctor.</p>
+
+      <div class="post-meta">
+        <span class="post-pillar">Health &amp; Medical</span>
+        <span class="meta-sep">·</span>
+        <span class="meta-date">April 14, 2026</span>
+        <span class="meta-sep">·</span>
+        <span class="meta-read">3 min read</span>
+      </div>
+
+      <hr class="post-divider post-divider--slate">
+
+      <!-- TABLE OF CONTENTS -->
+      <nav class="post-toc" aria-label="Article contents">
+        <p>In this article:</p>
+        <ol>
+          <li><a href="#the-problem">The problem with doctor appointments</a></li>
+          <li><a href="#how-ai-helps">How AI changes everything</a></li>
+          <li><a href="#what-to-tell">What to tell the AI</a></li>
+          <li><a href="#questions">The questions AI helped me think of</a></li>
+          <li><a href="#ai-prompt">This week's AI prompt</a></li>
+          <li><a href="#scam-watch">Scam watch</a></li>
+        </ol>
+      </nav>
+
+      <hr class="post-divider post-divider--slate">
+
+      <!-- BODY -->
+      <article class="post-body">
+
+        <p>You leave the doctor's office and it hits you in the parking lot.</p>
+
+        <p>The thing you forgot to ask. The symptom you meant to mention. The question about that new medication that you rehearsed in the car on the way there.</p>
+
+        <p>It happens to almost everyone. And it does not have to.</p>
+
+        <h2 id="the-problem">The Problem With Doctor Appointments</h2>
+
+        <p>Most appointments last fifteen minutes or less.</p>
+
+        <p>That is not a lot of time to cover everything on your mind — especially if you have multiple conditions, take several medications, or have been quietly worrying about something for weeks.</p>
+
+        <p>Most people leave feeling like they only scratched the surface.</p>
+
+        <h2 id="how-ai-helps">How AI Changes Everything</h2>
+
+        <p>The night before your next appointment, open ChatGPT or Claude. Both are completely free.</p>
+
+        <p>Tell it your age, your main health concerns, the medications you take, and what you are going in for.</p>
+
+        <p>Then ask it to help you build a question list.</p>
+
+        <p>The AI will not diagnose you. It is not your doctor.</p>
+
+        <p>But it is remarkably good at helping you organize your thoughts, put your concerns into clear words, and think of questions you might never have thought to ask on your own.</p>
+
+        <h2 id="what-to-tell">What to Tell the AI</h2>
+
+        <p>Give the AI as much context as you can:</p>
+
+        <ul>
+          <li>Your age and any existing conditions</li>
+          <li>Every medication you currently take</li>
+          <li>The reason for your upcoming visit</li>
+          <li>Any symptoms you have noticed recently</li>
+          <li>Anything you have been worried about but have not mentioned to a doctor yet</li>
+        </ul>
+
+        <p>The more context you give it, the more useful the questions will be.</p>
+
+        <p>Think of it like briefing a very knowledgeable friend before they come with you to the appointment.</p>
+
+        <!-- QUICK CHECK PROMPT -->
+        <div class="prompt-component">
+          <div class="prompt-component-header">
+            <span class="prompt-component-label">Quick Check</span>
+            <button class="prompt-copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+          </div>
+          <p class="prompt-component-intro">Use this before any appointment to organize your thoughts:</p>
+          <div class="prompt-component-text">I am [your age] years old and I take the following medications: [list them]. I am going to the doctor for [reason]. I have also been concerned about [any other health worries]. Can you help me create a clear list of questions to bring to my appointment so I make the most of my time?</div>
+        </div>
+
+        <h2 id="questions">The Questions AI Helped Me Think Of</h2>
+
+        <p>Here are examples of questions AI commonly surfaces that most patients never think to ask:</p>
+
+        <ul>
+          <li>What are the side effects I should actually watch for with this medication?</li>
+          <li>Is there a generic version available that does the same thing?</li>
+          <li>What happens if we wait and monitor this instead of treating it now?</li>
+          <li>Are any of my current medications known to interact with each other?</li>
+          <li>What should I do if my symptoms get worse before my next visit?</li>
+          <li>Is this something I should see a specialist about?</li>
+        </ul>
+
+        <p>Print the list before you go. Or keep it on your phone.</p>
+
+        <p>Hand it to your doctor at the start of the appointment and say — here are the things I want to make sure we cover today.</p>
+
+        <p>Most doctors genuinely appreciate a prepared patient. It makes the visit more efficient for both of you.</p>
+
+        <p>The night before your next appointment, spend ten minutes with AI building your question list. You will walk in feeling more like a partner in your own healthcare — and less like someone just nodding along for fifteen minutes.</p>
+
+      </article>
+
+      <hr class="post-divider">
+
+      <!-- AI PROMPT CALLOUT -->
+      <div id="ai-prompt" class="prompt-component">
+        <div class="prompt-component-header">
+          <span class="prompt-component-label">This Week's AI Prompt</span>
+          <button class="prompt-copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+        </div>
+        <p class="prompt-component-intro">Paste this into ChatGPT or Claude the night before your next appointment:</p>
+        <div class="prompt-component-text">I want to prepare for an upcoming doctor's appointment. My age is [fill in]. I currently take these medications: [list them]. The main reason for my visit is [fill in]. I have also been noticing [any symptoms or concerns]. Please help me create an organized list of questions to ask my doctor, including questions about my medications, any potential interactions, what to watch for, and what follow-up steps I should ask about. Keep the language simple so I can read it easily during the appointment.</div>
+      </div>
+
+      <hr class="post-divider">
+
+      <!-- SCAM WATCH CALLOUT -->
+      <div id="scam-watch" class="callout-scam">
+        <p class="callout-label">This Week's Scam Watch</p>
+        <p>A new health-related scam is targeting older adults through fake prescription discount calls. Scammers pose as pharmacy benefit representatives claiming your current prescriptions qualify for a special discount program — then ask for your Medicare number and date of birth to enroll you. Your Medicare number is as valuable as your Social Security number. Never give it out over an unsolicited phone call. If you are interested in prescription savings, ask your actual pharmacist or doctor directly.</p>
+      </div>
+
+      <hr class="post-divider">
+
+      <!-- CLOSING -->
+      <div class="post-closing">
+        <p>You deserve to feel heard every single time you walk into a doctor's office.</p>
+        <p>A little preparation goes a long way. And now you have a tool that makes that preparation easy, fast, and free.</p>
+        <p>Bring your list to your next appointment. Notice how different it feels to walk in ready.</p>
+        <p>Morning Cup AI is here every week with one practical tip you can use today.</p>
+      </div>
+
+      <!-- SHARE (bottom) -->
+      <div class="post-share">
+        <h2>Know someone who needs to see this?</h2>
+        <div class="share-buttons">
+          <a class="share-btn"
+             href="https://www.facebook.com/sharer/sharer.php?u=https://morningcupai.com/doctor-appointment.html"
+             target="_blank" rel="noopener noreferrer">Share on Facebook</a>
+          <button class="share-btn copy-link-btn" onclick="copyLink(this)">Copy link</button>
+          <a class="share-btn"
+             href="mailto:?subject=A%20tip%20for%20your%20next%20doctor%27s%20appointment&body=I%20thought%20this%20might%20help%20you%3A%20https%3A%2F%2Fmorningcupai.com%2Fdoctor-appointment.html">Send by email</a>
+        </div>
+      </div>
+
+      <!-- RELATED POSTS -->
+      <div class="post-related">
+        <h2>Keep reading</h2>
+        <div class="related-grid">
+
+          <a href="voice-cloning-scam.html" class="blog-card" style="text-decoration:none;">
+            <div class="blog-card-thumb" aria-hidden="true"></div>
+            <div class="blog-card-body">
+              <span class="blog-card-pillar">Scam Protection</span>
+              <h2>Your grandson called. He needed money. But it wasn't him.</h2>
+              <span class="read-more">Read article</span>
+            </div>
+          </a>
+
+          <a href="subscriptions.html" class="blog-card" style="text-decoration:none;">
+            <div class="blog-card-thumb" aria-hidden="true"></div>
+            <div class="blog-card-body">
+              <span class="blog-card-pillar">Money &amp; Retirement</span>
+              <h2>How to find and cancel subscriptions you forgot you were paying for</h2>
+              <span class="read-more">Read article</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- SUBSCRIBE CTA -->
+  <section class="subscribe-cta">
+    <div class="subscribe-cta-inner">
+      <span class="subscribe-cta-eyebrow">Free Weekly Newsletter</span>
+      <h2>One practical AI tip. Every week.<br>No jargon. No overwhelm. Just real help.</h2>
+      <p class="subscribe-cta-sub">Join adults who are learning to use AI safely and confidently in real life.</p>
+      <form class="subscribe-cta-form" action="subscribe.html">
+        <input type="email" name="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="subscribe-cta-fine">Free forever. Unsubscribe any time. We never share your email.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; 2026 Morning Cup AI. All rights reserved.</span>
+      <ul class="footer-links">
+        <li><a href="/home">Home</a></li>
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div id="reading-progress" style="position:fixed;top:0;left:0;width:0%;height:3px;background:#2A3F55;z-index:9999;transition:width 0.1s ease;pointer-events:none;"></div>
+
+  <script src="nav.js"></script>
+  <script>
+    (function() {
+      var bar = document.getElementById('reading-progress');
+      if (!bar) return;
+      function updateProgress() {
+        if (window.innerWidth < 768) { bar.style.width = '0%'; return; }
+        var scrolled = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var total = Math.max(
+          document.body.scrollHeight,
+          document.documentElement.scrollHeight
+        ) - window.innerHeight;
+        bar.style.width = total > 0 ? Math.min(scrolled / total * 100, 100) + '%' : '0%';
+      }
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+      window.addEventListener('load', updateProgress);
+      updateProgress();
+    })();
+
+    function copyPrompt(btn) {
+      var text = btn.closest('.prompt-component').querySelector('.prompt-component-text').textContent.trim();
+      navigator.clipboard.writeText(text).then(function() {
+        btn.textContent = '✓ Copied!';
+        setTimeout(function() { btn.textContent = 'Copy Prompt'; }, 2000);
+      });
+    }
+
+    function copyLink(btn) {
+      navigator.clipboard.writeText('https://morningcupai.com/doctor-appointment.html').then(function() {
+        btn.textContent = 'Copied!';
+        setTimeout(function() { btn.textContent = 'Copy link'; }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
