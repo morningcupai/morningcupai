@@ -435,8 +435,22 @@
     </div>
   </footer>
 
+  <div id="reading-progress" style="position:fixed;top:0;left:0;width:0%;height:3px;background:#2A3F55;z-index:9999;transition:width 0.1s ease;pointer-events:none;"></div>
+
   <script src="nav.js"></script>
   <script>
+    (function() {
+      var bar = document.getElementById('reading-progress');
+      function updateProgress() {
+        if (window.innerWidth < 768) { bar.style.width = '0%'; return; }
+        var scrolled = window.scrollY || document.documentElement.scrollTop;
+        var total = document.documentElement.scrollHeight - window.innerHeight;
+        bar.style.width = total > 0 ? (scrolled / total * 100) + '%' : '0%';
+      }
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+
     function copyLink(btn) {
       navigator.clipboard.writeText('https://morningcupai.com/voice-cloning-scam.html').then(function() {
         btn.textContent = 'Copied!';
