@@ -611,6 +611,35 @@ img {
 }
 
 /* ===========================
+   ARTICLE TYPOGRAPHY
+   =========================== */
+
+article p {
+  margin-bottom: 24px;
+  line-height: 1.85;
+  font-size: 18px;
+}
+
+article h2 {
+  margin-top: 48px;
+  margin-bottom: 16px;
+  font-size: 22px;
+  color: #2A3F55;
+}
+
+article ul,
+article ol {
+  margin-bottom: 28px;
+  padding-left: 24px;
+  line-height: 2;
+  font-size: 18px;
+}
+
+article li {
+  margin-bottom: 8px;
+}
+
+/* ===========================
    SUBSCRIBE PAGE
    =========================== */
 
