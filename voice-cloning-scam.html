@@ -239,6 +239,24 @@
       margin: 0;
     }
 
+    /* ── Hero image with gradient overlay ── */
+    .post-hero-wrap {
+      position: relative;
+    }
+    .post-hero-wrap::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 30%;
+      background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.55));
+      pointer-events: none;
+    }
+    .post-hero-wrap .post-hero-img {
+      height: 420px;
+    }
+
     @media (max-width: 700px) {
       .post-wrap { padding: 2rem 1.25rem 4rem; }
       .callout-prompt,
@@ -269,7 +287,9 @@
   </nav>
 
   <!-- POST HERO IMAGE -->
-  <img src="Images/voice-cloning-scam.jpg" alt="Your grandson called — AI voice cloning scam warning" class="post-hero-img" />
+  <div class="post-hero-wrap">
+    <img src="Images/voice-cloning-scam.jpg" alt="Your grandson called — AI voice cloning scam warning" class="post-hero-img" />
+  </div>
 
   <!-- POST -->
   <main>
