@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to use AI to find and cancel subscriptions you forgot you were paying for. — Morning Cup AI</title>
+  <meta name="description" content="A simple step-by-step guide to using AI to audit your bank statements, identify forgotten subscriptions, and stop paying for things you no longer need." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- OG TAGS — update title, description, image and url for every new article -->
+  <meta property="og:title" content="How to use AI to find and cancel subscriptions you forgot you were paying for.">
+  <meta property="og:description" content="A simple step-by-step guide to using AI to audit your bank statements, identify forgotten subscriptions, and stop paying for things you no longer need.">
+  <meta property="og:image" content="https://morningcupai.com/Images/subscriptions.jpg">
+  <meta property="og:url" content="https://morningcupai.com/subscriptions.html">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    /* ── Post-specific styles ── */
+
+    .post-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 5rem;
+    }
+
+    .post-back {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--slate);
+      text-decoration: none;
+      margin-bottom: 8px;
+      letter-spacing: 0.02em;
+      transition: color 0.15s;
+    }
+    .post-back:hover { color: var(--navy); }
+    .post-back::before { content: "← "; }
+
+    .post-title {
+      font-size: 42px;
+      line-height: 1.2;
+      margin: 8px 0;
+    }
+
+    .post-subtitle {
+      font-size: 20px;
+      color: var(--slate);
+      margin: 8px 0;
+      line-height: 1.5;
+    }
+
+    .post-meta {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      flex-wrap: wrap;
+      margin: 8px 0 0;
+    }
+    .post-meta .post-pillar {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.65rem;
+      border-radius: 20px;
+      margin: 0;
+    }
+    .post-meta .meta-sep {
+      color: var(--slate);
+      margin: 0 0.4rem;
+      font-size: 0.82rem;
+    }
+    .post-meta .meta-date,
+    .post-meta .meta-read {
+      font-size: 0.82rem;
+      color: var(--slate);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .post-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2rem 0;
+    }
+    .post-divider--slate {
+      border-top-color: #E2EAF2;
+      margin: 1.5rem 0;
+    }
+
+    .post-body p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 1.4rem;
+    }
+
+    /* ── Section labels ── */
+    .callout-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+
+    /* ── Scam Watch callout (amber) ── */
+    .callout-scam {
+      background: #FEF3C7;
+      border-left: 4px solid #D97706;
+      border-radius: var(--radius);
+      padding: 1.75rem 2rem;
+      margin: 2rem 0;
+    }
+    .callout-scam .callout-label {
+      color: #92400E;
+    }
+    .callout-scam p {
+      font-size: 0.95rem;
+      color: #451A03;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* ── Related posts ── */
+    .post-related {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+    .post-related h2 {
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin-bottom: 1.25rem;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 540px) {
+      .related-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Share section ── */
+    .post-share {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+    .post-share h2 {
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+    .share-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .share-btn {
+      display: inline-block;
+      font-family: inherit;
+      font-size: 1.0625rem;
+      font-weight: 600;
+      color: var(--navy);
+      background: var(--cream);
+      border: 2px solid var(--navy);
+      border-radius: 6px;
+      padding: 0.55rem 1.25rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.15s, color 0.15s;
+      white-space: nowrap;
+    }
+    .share-btn:hover {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    /* ── Table of contents ── */
+    .post-toc {
+      background: var(--cream);
+      border-left: 4px solid var(--navy);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.75rem;
+      margin: 2rem 0;
+    }
+    .post-toc p {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin: 0 0 0.75rem;
+    }
+    .post-toc ol {
+      margin: 0;
+      padding-left: 1.4rem;
+      list-style: decimal;
+    }
+    .post-toc li {
+      font-size: 1.0625rem;
+      line-height: 1.8;
+    }
+    .post-toc a {
+      color: var(--navy);
+      text-decoration: none;
+    }
+    .post-toc a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Closing section ── */
+    .post-closing {
+      background: var(--cream);
+      border-radius: var(--radius);
+      padding: 2rem 1.75rem;
+      margin-top: 2rem;
+    }
+    .post-closing p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #333;
+      margin: 0 0 1rem;
+    }
+    .post-closing p:last-child { margin: 0; }
+
+    /* ── Hero image with gradient overlay ── */
+    .post-hero-wrap {
+      position: relative;
+    }
+    .post-hero-wrap::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 30%;
+      background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.55));
+      pointer-events: none;
+    }
+    .post-hero-wrap .post-hero-img {
+      height: 420px;
+    }
+
+    @media (max-width: 700px) {
+      .post-wrap { padding: 2rem 1.25rem 4rem; }
+      .post-title { font-size: 32px; }
+      .callout-scam { padding: 1.25rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/home" class="nav-brand" aria-label="Morning Cup AI home">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="10" width="16" height="13" rx="2" fill="#FDF6EC" />
+          <path d="M20 13h3a3 3 0 0 1 0 6h-3" stroke="#FDF6EC" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <rect x="4" y="23" width="16" height="2" rx="1" fill="#C8D4DF" />
+          <path d="M10 7 Q10.5 4 12 5 Q13.5 6 14 3" stroke="#C8D4DF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </svg>
+        Morning Cup AI
+      </a>
+      <ul class="nav-links">
+        <li><a href="/home">Home</a></li>
+        <li><a href="archive.html" class="active">Archive</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- POST HERO IMAGE -->
+  <div class="post-hero-wrap">
+    <img src="Images/subscriptions.jpg" alt="Using AI to find and cancel forgotten subscriptions" class="post-hero-img" />
+  </div>
+
+  <!-- POST -->
+  <main>
+    <div class="post-wrap">
+
+      <a href="archive.html" class="post-back">Back to Archive</a>
+
+      <h1 class="post-title">How to use AI to find and cancel subscriptions you forgot you were paying for.</h1>
+      <p class="post-subtitle">A simple audit that takes 20 minutes — and could save you hundreds of dollars a year.</p>
+
+      <div class="post-meta">
+        <span class="post-pillar">Money &amp; Retirement</span>
+        <span class="meta-sep">·</span>
+        <span class="meta-date">February 10, 2026</span>
+        <span class="meta-sep">·</span>
+        <span class="meta-read">3 min read</span>
+      </div>
+
+      <hr class="post-divider post-divider--slate">
+
+      <!-- TABLE OF CONTENTS -->
+      <nav class="post-toc" aria-label="Article contents">
+        <p>In this article:</p>
+        <ol>
+          <li><a href="#the-subscription-problem">The subscription problem most people have</a></li>
+          <li><a href="#how-ai-helps">How AI helps you find them</a></li>
+          <li><a href="#step-by-step">Step-by-step: running your audit</a></li>
+          <li><a href="#how-to-cancel">How to cancel what you find</a></li>
+          <li><a href="#ai-prompt">This week's AI prompt</a></li>
+          <li><a href="#scam-watch">Scam watch</a></li>
+        </ol>
+      </nav>
+
+      <hr class="post-divider post-divider--slate">
+
+      <!-- BODY -->
+      <article class="post-body">
+
+        <p>Most people are paying for at least one thing they completely forgot about.</p>
+
+        <p>A streaming service from two years ago. A news site you signed up for during an election. A fitness app you used for three weeks. A free trial that quietly became a monthly charge.</p>
+
+        <p>It adds up faster than you think.</p>
+
+        <h2 id="the-subscription-problem">The Subscription Problem Most People Have</h2>
+
+        <p>The average American pays for 4.5 subscription services they no longer actively use.</p>
+
+        <p>That is often $50 to $150 per month leaving your account quietly — without you ever making a conscious decision to keep paying.</p>
+
+        <p>The companies that offer subscriptions are very good at making cancellation hard and renewal automatic.</p>
+
+        <p>Most people only discover forgotten subscriptions when they carefully read their bank statement — which most people never do line by line.</p>
+
+        <h2 id="how-ai-helps">How AI Helps You Find Them</h2>
+
+        <p>You do not need to go through your bank statement alone.</p>
+
+        <p>AI can help you build a systematic checklist, identify the kinds of charges to look for, and even draft cancellation emails for services that make it difficult to quit.</p>
+
+        <p>Think of it as having a patient, organized friend sit down with you and go through everything together.</p>
+
+        <p>It is not complicated. It just requires 20 focused minutes and a copy of your last two months of bank or credit card statements.</p>
+
+        <h2 id="step-by-step">Step-by-Step — Running Your Audit</h2>
+
+        <ol>
+          <li>Download or print your last two months of bank and credit card statements</li>
+          <li>Open ChatGPT or Claude</li>
+          <li>Tell the AI you want to do a subscription audit and paste in a list of every charge you do not immediately recognize</li>
+          <li>Ask the AI to help you identify which ones are likely subscription services</li>
+          <li>For each one — decide: keep, cancel, or investigate further</li>
+          <li>For anything you want to cancel, ask the AI to draft a cancellation email or find the cancellation steps</li>
+        </ol>
+
+        <p>Pay special attention to charges between $5 and $25 per month.</p>
+
+        <p>These are small enough to ignore month after month but large enough to add up to hundreds of dollars over a year.</p>
+
+        <h2>What to Look For Specifically</h2>
+
+        <ul>
+          <li>Streaming services — Netflix, Hulu, Disney+, Paramount+, Apple TV+, HBO Max</li>
+          <li>News and magazine subscriptions</li>
+          <li>Cloud storage — iCloud, Google One, Dropbox</li>
+          <li>Music services — Spotify, Apple Music, Pandora</li>
+          <li>Fitness and wellness apps</li>
+          <li>VPN services</li>
+          <li>Password managers you forgot you had</li>
+          <li>Charity donations set to auto-renew</li>
+          <li>Amazon Prime and similar membership programs</li>
+          <li>Any charge from a company ending in ".io" or with an unfamiliar name</li>
+        </ul>
+
+        <h2 id="how-to-cancel">How to Cancel What You Find</h2>
+
+        <p>Some services make cancellation easy — one click in the app or website settings.</p>
+
+        <p>Others are deliberately difficult — buried menus, mandatory phone calls, or confusing cancellation flows designed to frustrate you into giving up.</p>
+
+        <p>If you cannot figure out how to cancel something, ask the AI directly.</p>
+
+        <p>Type: "How do I cancel my [service name] subscription?" and it will walk you through the exact steps.</p>
+
+        <p>If a company refuses to cancel or charges you after you cancelled, you can contact your bank and dispute the charge as unauthorized.</p>
+
+        <p>You have more power than most companies want you to know.</p>
+
+        <!-- QUICK CHECK PROMPT -->
+        <div class="prompt-component">
+          <div class="prompt-component-header">
+            <span class="prompt-component-label">Quick Check</span>
+            <button class="prompt-copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+          </div>
+          <p class="prompt-component-intro">See a charge you do not recognize? Use this right now:</p>
+          <div class="prompt-component-text">I see a charge on my bank statement for [amount] from a company called [name]. I do not remember signing up for anything from them. Can you tell me what this company is and how I would go about cancelling or disputing this charge?</div>
+        </div>
+
+      </article>
+
+      <hr class="post-divider">
+
+      <!-- AI PROMPT CALLOUT -->
+      <div id="ai-prompt" class="prompt-component">
+        <div class="prompt-component-header">
+          <span class="prompt-component-label">This Week's AI Prompt</span>
+          <button class="prompt-copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+        </div>
+        <p class="prompt-component-intro">Set aside 20 minutes, pull up your last two months of statements, and paste this into ChatGPT or Claude:</p>
+        <div class="prompt-component-text">I want to do a full subscription audit to find services I am paying for but no longer using.
+
+Here are all the charges from my bank and credit card statements that I do not immediately recognize:
+[paste your list of charges here — company name and monthly amount]
+
+Please help me:
+1. Identify which of these are likely subscription services
+2. Flag any that seem unusually high or suspicious
+3. Suggest which ones are worth keeping versus cancelling based on common usage
+4. Draft a short cancellation email I can send for any service I decide to cancel
+
+Keep your explanations simple and practical — I just want to stop paying for things I am not using.</div>
+      </div>
+
+      <hr class="post-divider">
+
+      <!-- SCAM WATCH CALLOUT -->
+      <div id="scam-watch" class="callout-scam">
+        <p class="callout-label">This Week's Scam Watch</p>
+        <p>A growing scam targets people who have recently cancelled subscriptions. Scammers send official-looking emails or texts claiming your cancellation was not processed and you will be charged unless you call a number or click a link immediately.</p>
+        <p style="margin-top: 0.75rem;">Legitimate companies confirm cancellations by email automatically — they do not threaten you or demand you call to verify. If you receive a message like this after cancelling a service, do not click any links. Go directly to the company's official website to check your account status.</p>
+      </div>
+
+      <hr class="post-divider">
+
+      <!-- CLOSING -->
+      <div class="post-closing">
+        <p>Twenty minutes and a copy of your bank statement.</p>
+        <p>That is all it takes to potentially save yourself hundreds of dollars every year.</p>
+        <p>AI makes the process faster, less overwhelming, and more thorough than doing it alone.</p>
+        <p>Run your audit this week. You may be surprised what you find.</p>
+        <p>Morning Cup AI is here every week with one practical tip you can use today.</p>
+      </div>
+
+      <!-- SHARE (bottom) -->
+      <div class="post-share">
+        <h2>Know someone who needs to see this?</h2>
+        <div class="share-buttons">
+          <a class="share-btn"
+             href="https://www.facebook.com/sharer/sharer.php?u=https://morningcupai.com/subscriptions.html"
+             target="_blank" rel="noopener noreferrer">Share on Facebook</a>
+          <button class="share-btn copy-link-btn" onclick="copyLink(this)">Copy link</button>
+          <a class="share-btn"
+             href="mailto:?subject=How%20to%20find%20subscriptions%20you%20forgot%20you%20were%20paying%20for&body=This%20is%20worth%2020%20minutes%20of%20your%20time%3A%20https%3A%2F%2Fmorningcupai.com%2Fsubscriptions.html">Send by email</a>
+        </div>
+      </div>
+
+      <!-- RELATED POSTS -->
+      <div class="post-related">
+        <h2>Keep reading</h2>
+        <div class="related-grid">
+
+          <a href="medicare-scam-call.html" class="blog-card" style="text-decoration:none;">
+            <img class="blog-card-thumb" src="Images/medicare-scam.jpg" alt="Protecting yourself from fake Medicare phone scams" />
+            <div class="blog-card-body">
+              <span class="blog-card-pillar">Scam Protection</span>
+              <h2>The fake Medicare call that's targeting older adults right now.</h2>
+              <span class="read-more">Read article</span>
+            </div>
+          </a>
+
+          <a href="doctor-appointment.html" class="blog-card" style="text-decoration:none;">
+            <img class="blog-card-thumb" src="Images/doctor-appointment.jpg" alt="Using AI to prepare for a doctor's appointment" />
+            <div class="blog-card-body">
+              <span class="blog-card-pillar">Health &amp; Medical</span>
+              <h2>The one thing to do the night before your next doctor's appointment.</h2>
+              <span class="read-more">Read article</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- SUBSCRIBE CTA -->
+  <section class="subscribe-cta">
+    <div class="subscribe-cta-inner">
+      <span class="subscribe-cta-eyebrow">Free Weekly Newsletter</span>
+      <h2>One practical AI tip. Every week.<br>No jargon. No overwhelm. Just real help.</h2>
+      <p class="subscribe-cta-sub">Join adults who are learning to use AI safely and confidently in real life.</p>
+      <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="3a62a06a-c858-4fd6-ba11-defaca0bcef9"></script>
+      <p class="subscribe-cta-fine">Free forever. Unsubscribe any time. We never share your email.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; 2026 Morning Cup AI. All rights reserved.</span>
+      <ul class="footer-links">
+        <li><a href="/home">Home</a></li>
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div id="reading-progress" style="position:fixed;top:0;left:0;width:0%;height:3px;background:#2A3F55;z-index:9999;transition:width 0.1s ease;pointer-events:none;"></div>
+
+  <script src="nav.js"></script>
+  <script>
+    (function() {
+      var bar = document.getElementById('reading-progress');
+      if (!bar) return;
+      function updateProgress() {
+        if (window.innerWidth < 768) { bar.style.width = '0%'; return; }
+        var scrolled = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var total = Math.max(
+          document.body.scrollHeight,
+          document.documentElement.scrollHeight
+        ) - window.innerHeight;
+        bar.style.width = total > 0 ? Math.min(scrolled / total * 100, 100) + '%' : '0%';
+      }
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+      window.addEventListener('load', updateProgress);
+      updateProgress();
+    })();
+
+    function copyPrompt(btn) {
+      var text = btn.closest('.prompt-component').querySelector('.prompt-component-text').textContent.trim();
+      navigator.clipboard.writeText(text).then(function() {
+        btn.textContent = '✓ Copied!';
+        setTimeout(function() { btn.textContent = 'Copy Prompt'; }, 2000);
+      });
+    }
+
+    function copyLink(btn) {
+      navigator.clipboard.writeText('https://morningcupai.com/subscriptions.html').then(function() {
+        btn.textContent = 'Copied!';
+        setTimeout(function() { btn.textContent = 'Copy link'; }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
