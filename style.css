@@ -835,6 +835,13 @@ article li {
   color: rgba(255,255,255,0.5);
 }
 
+.subscribe-cta-inner iframe,
+.subscribe-cta-inner > div[data-beehiiv-form],
+.subscribe-cta-inner > [class*="beehiiv"] {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (max-width: 540px) {
   .subscribe-cta-form input[type="email"],
   .subscribe-cta-form button {
