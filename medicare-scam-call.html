@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The fake Medicare call that's targeting older adults right now. — Morning Cup AI</title>
+  <meta name="description" content="How to spot a Medicare phone scam in the first 30 seconds — and exactly what to say before you hang up." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- OG TAGS — update title, description, image and url for every new article -->
+  <meta property="og:title" content="The fake Medicare call that's targeting older adults right now.">
+  <meta property="og:description" content="How to spot a Medicare phone scam in the first 30 seconds — and exactly what to say before you hang up.">
+  <meta property="og:image" content="https://morningcupai.com/Images/medicare-scam.jpg">
+  <meta property="og:url" content="https://morningcupai.com/medicare-scam-call.html">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    /* ── Post-specific styles ── */
+
+    .post-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 5rem;
+    }
+
+    .post-back {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--slate);
+      text-decoration: none;
+      margin-bottom: 8px;
+      letter-spacing: 0.02em;
+      transition: color 0.15s;
+    }
+    .post-back:hover { color: var(--navy); }
+    .post-back::before { content: "← "; }
+
+    .post-title {
+      font-size: 42px;
+      line-height: 1.2;
+      margin: 8px 0;
+    }
+
+    .post-subtitle {
+      font-size: 20px;
+      color: var(--slate);
+      margin: 8px 0;
+      line-height: 1.5;
+    }
+
+    .post-meta {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      flex-wrap: wrap;
+      margin: 8px 0 0;
+    }
+    .post-meta .post-pillar {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.65rem;
+      border-radius: 20px;
+      margin: 0;
+    }
+    .post-meta .meta-sep {
+      color: var(--slate);
+      margin: 0 0.4rem;
+      font-size: 0.82rem;
+    }
+    .post-meta .meta-date,
+    .post-meta .meta-read {
+      font-size: 0.82rem;
+      color: var(--slate);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .post-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2rem 0;
+    }
+    .post-divider--slate {
+      border-top-color: #E2EAF2;
+      margin: 1.5rem 0;
+    }
+
+    .post-body p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 1.4rem;
+    }
+
+    /* ── Section labels ── */
+    .callout-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+
+    /* ── Scam Watch callout (amber) ── */
+    .callout-scam {
+      background: #FEF3C7;
+      border-left: 4px solid #D97706;
+      border-radius: var(--radius);
+      padding: 1.75rem 2rem;
+      margin: 2rem 0;
+    }
+    .callout-scam .callout-label {
+      color: #92400E;
+    }
+    .callout-scam p {
+      font-size: 0.95rem;
+      color: #451A03;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* ── Related posts ── */
+    .post-related {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+    .post-related h2 {
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin-bottom: 1.25rem;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 540px) {
+      .related-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Share section ── */
+    .post-share {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+    .post-share h2 {
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+    .share-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .share-btn {
+      display: inline-block;
+      font-family: inherit;
+      font-size: 1.0625rem;
+      font-weight: 600;
+      color: var(--navy);
+      background: var(--cream);
+      border: 2px solid var(--navy);
+      border-radius: 6px;
+      padding: 0.55rem 1.25rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.15s, color 0.15s;
+      white-space: nowrap;
+    }
+    .share-btn:hover {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    /* ── Table of contents ── */
+    .post-toc {
+      background: var(--cream);
+      border-left: 4px solid var(--navy);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.75rem;
+      margin: 2rem 0;
+    }
+    .post-toc p {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin: 0 0 0.75rem;
+    }
+    .post-toc ol {
+      margin: 0;
+      padding-left: 1.4rem;
+      list-style: decimal;
+    }
+    .post-toc li {
+      font-size: 1.0625rem;
+      line-height: 1.8;
+    }
+    .post-toc a {
+      color: var(--navy);
+      text-decoration: none;
+    }
+    .post-toc a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Closing section ── */
+    .post-closing {
+      background: var(--cream);
+      border-radius: var(--radius);
+      padding: 2rem 1.75rem;
+      margin-top: 2rem;
+    }
+    .post-closing p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #333;
+      margin: 0 0 1rem;
+    }
+    .post-closing p:last-child { margin: 0; }
+
+    /* ── Hero image with gradient overlay ── */
+    .post-hero-wrap {
+      position: relative;
+    }
+    .post-hero-wrap::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 30%;
+      background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.55));
+      pointer-events: none;
+    }
+    .post-hero-wrap .post-hero-img {
+      height: 420px;
+    }
+
+    @media (max-width: 700px) {
+      .post-wrap { padding: 2rem 1.25rem 4rem; }
+      .post-title { font-size: 32px; }
+      .callout-scam { padding: 1.25rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/home" class="nav-brand" aria-label="Morning Cup AI home">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="10" width="16" height="13" rx="2" fill="#FDF6EC" />
+          <path d="M20 13h3a3 3 0 0 1 0 6h-3" stroke="#FDF6EC" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <rect x="4" y="23" width="16" height="2" rx="1" fill="#C8D4DF" />
+          <path d="M10 7 Q10.5 4 12 5 Q13.5 6 14 3" stroke="#C8D4DF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </svg>
+        Morning Cup AI
+      </a>
+      <ul class="nav-links">
+        <li><a href="/home">Home</a></li>
+        <li><a href="archive.html" class="active">Archive</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- POST HERO IMAGE -->
+  <div class="post-hero-wrap">
+    <img src="Images/medicare-scam.jpg" alt="Protecting yourself from fake Medicare phone scams" class="post-hero-img" />
+  </div>
+
+  <!-- POST -->
+  <main>
+    <div class="post-wrap">
+
+      <a href="archive.html" class="post-back">Back to Archive</a>
+
+      <h1 class="post-title">The fake Medicare call that's targeting older adults right now.</h1>
+      <p class="post-subtitle">How to spot it in the first 30 seconds — and exactly what to say before you hang up.</p>
+
+      <div class="post-meta">
+        <span class="post-pillar">Scam Protection</span>
+        <span class="meta-sep">·</span>
+        <span class="meta-date">March 3, 2026</span>
+        <span class="meta-sep">·</span>
+        <span class="meta-read">3 min read</span>
+      </div>
+
+      <hr class="post-divider post-divider--slate">
+
+      <!-- TABLE OF CONTENTS -->
+      <nav class="post-toc" aria-label="Article contents">
+        <p>In this article:</p>
+        <ol>
+          <li><a href="#what-the-call-sounds-like">What the call sounds like</a></li>
+          <li><a href="#why-these-scams-work">Why these scams work so well</a></li>
+          <li><a href="#four-words">The four words that give it away</a></li>
+          <li><a href="#what-to-say">What to say before you hang up</a></li>
+          <li><a href="#ai-prompt">This week's AI prompt</a></li>
+          <li><a href="#scam-watch">Scam watch</a></li>
+        </ol>
+      </nav>
+
+      <hr class="post-divider post-divider--slate">
+
+      <!-- BODY -->
+      <article class="post-body">
+
+        <p>The call sounds completely official.</p>
+
+        <p>A calm, professional voice tells you there has been suspicious activity on your Medicare account. Your benefits are at risk. You need to verify your information right now to keep your coverage active.</p>
+
+        <p>It sounds real. It feels urgent. And it is designed to make you act before you think.</p>
+
+        <h2 id="what-the-call-sounds-like">What the Call Sounds Like</h2>
+
+        <p>Medicare phone scams are now the most common financial fraud targeting adults over 60.</p>
+
+        <p>According to the FBI, older Americans lost more than $3.4 billion to phone fraud last year alone. Medicare scams account for a significant portion of those losses.</p>
+
+        <p>The scammer may claim to be from Medicare, the Social Security Administration, or even your own insurance company.</p>
+
+        <p>They use official-sounding language, fake case numbers, and urgent deadlines to create panic — and panic is what they are counting on.</p>
+
+        <h2 id="why-these-scams-work">Why These Scams Work So Well</h2>
+
+        <p>These calls are specifically engineered to target the part of your brain that protects the people you love.</p>
+
+        <p>Your healthcare. Your financial security. Your independence. Scammers know these are your most sensitive pressure points.</p>
+
+        <p>Many scammers now use AI to clone the voices of real Medicare representatives from recorded calls.</p>
+
+        <p>The voice sounds authoritative. The number on your caller ID may even show up as a government number. Neither of these things means the call is real.</p>
+
+        <h2 id="four-words">The Four Words That Give It Away</h2>
+
+        <p>Legitimate Medicare representatives will never say these four things on an unsolicited call:</p>
+
+        <ul>
+          <li>"Your benefits will be suspended"</li>
+          <li>"We need to verify your Medicare number"</li>
+          <li>"You must act right now or lose coverage"</li>
+          <li>"Press 1 to speak with a representative"</li>
+        </ul>
+
+        <p>If you hear any of these phrases — the call is a scam. Full stop.</p>
+
+        <p>Medicare does not call you out of the blue to verify information or threaten to suspend your benefits.</p>
+
+        <h2 id="what-to-say">What to Say Before You Hang Up</h2>
+
+        <p>You do not owe the caller anything. You do not need to be polite.</p>
+
+        <p>The moment something feels wrong, hang up immediately.</p>
+
+        <ol>
+          <li>Do not press any numbers or say "yes" to any question</li>
+          <li>Do not confirm your name, address, date of birth, or Medicare number</li>
+          <li>Hang up without explaining yourself</li>
+          <li>Call Medicare directly at 1-800-MEDICARE to verify your account is fine</li>
+          <li>Report the scam at reportfraud.ftc.gov</li>
+        </ol>
+
+        <p>If you already gave information to a suspicious caller, do not panic.</p>
+
+        <p>Call Medicare immediately at 1-800-MEDICARE and tell them what happened. They will flag your account and guide you through the next steps.</p>
+
+        <!-- QUICK CHECK PROMPT -->
+        <div class="prompt-component">
+          <div class="prompt-component-header">
+            <span class="prompt-component-label">Quick Check</span>
+            <button class="prompt-copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+          </div>
+          <p class="prompt-component-intro">Not sure if a call you received was legitimate? Use this right now:</p>
+          <div class="prompt-component-text">I just received a call claiming to be from Medicare saying [describe what they said]. They asked me for [what they requested]. Does this sound like a scam? What should I do next?</div>
+        </div>
+
+      </article>
+
+      <hr class="post-divider">
+
+      <!-- AI PROMPT CALLOUT -->
+      <div id="ai-prompt" class="prompt-component">
+        <div class="prompt-component-header">
+          <span class="prompt-component-label">This Week's AI Prompt</span>
+          <button class="prompt-copy-btn" onclick="copyPrompt(this)">Copy Prompt</button>
+        </div>
+        <p class="prompt-component-intro">Use this to create a personal scam response plan you can keep by your phone:</p>
+        <div class="prompt-component-text">I want to protect myself from Medicare and government impersonation phone scams. Can you help me create a simple one-page reference card I can keep next to my phone that includes:
+1. The exact phrases that identify a scam call
+2. The three things I should never say or confirm on an unsolicited call
+3. The official phone numbers for Medicare and Social Security I should call to verify anything
+4. What to do if I think I already gave information to a scammer
+Make it simple enough to print and keep by the phone.</div>
+      </div>
+
+      <hr class="post-divider">
+
+      <!-- SCAM WATCH CALLOUT -->
+      <div id="scam-watch" class="callout-scam">
+        <p class="callout-label">This Week's Scam Watch</p>
+        <p>A new version of this scam is now targeting Medicare recipients during open enrollment periods. Scammers call claiming your current plan is being discontinued and you must switch immediately or lose coverage.</p>
+        <p style="margin-top: 0.75rem;">Open enrollment has specific dates and Medicare will never call you to force an immediate plan change. If you receive a call like this during any time of year, hang up and call 1-800-MEDICARE directly to check your actual plan status.</p>
+      </div>
+
+      <hr class="post-divider">
+
+      <!-- CLOSING -->
+      <div class="post-closing">
+        <p>You are not gullible for almost falling for one of these calls.</p>
+        <p>These scams are built by professionals who have studied exactly what to say to make you feel afraid.</p>
+        <p>Knowing what to listen for is your most powerful protection. Keep this article somewhere you can find it. Share it with someone who needs it.</p>
+        <p>Morning Cup AI is here every week with one practical tip to keep you safe and confident.</p>
+      </div>
+
+      <!-- SHARE (bottom) -->
+      <div class="post-share">
+        <h2>Know someone who needs to see this?</h2>
+        <div class="share-buttons">
+          <a class="share-btn"
+             href="https://www.facebook.com/sharer/sharer.php?u=https://morningcupai.com/medicare-scam-call.html"
+             target="_blank" rel="noopener noreferrer">Share on Facebook</a>
+          <button class="share-btn copy-link-btn" onclick="copyLink(this)">Copy link</button>
+          <a class="share-btn"
+             href="mailto:?subject=Warning%20%E2%80%94%20fake%20Medicare%20calls%20are%20targeting%20older%20adults&body=I%20thought%20you%20should%20know%20about%20this%3A%20https%3A%2F%2Fmorningcupai.com%2Fmedicare-scam-call.html">Send by email</a>
+        </div>
+      </div>
+
+      <!-- RELATED POSTS -->
+      <div class="post-related">
+        <h2>Keep reading</h2>
+        <div class="related-grid">
+
+          <a href="voice-cloning-scam.html" class="blog-card" style="text-decoration:none;">
+            <img class="blog-card-thumb" src="Images/voice-cloning-scam.jpg" alt="Your grandson called — AI voice cloning scam warning" />
+            <div class="blog-card-body">
+              <span class="blog-card-pillar">Scam Protection</span>
+              <h2>Your grandson called. He needed money. But it wasn't him.</h2>
+              <span class="read-more">Read article</span>
+            </div>
+          </a>
+
+          <a href="doctor-appointment.html" class="blog-card" style="text-decoration:none;">
+            <img class="blog-card-thumb" src="Images/doctor-appointment.jpg" alt="Using AI to prepare for a doctor's appointment" />
+            <div class="blog-card-body">
+              <span class="blog-card-pillar">Health &amp; Medical</span>
+              <h2>The one thing to do the night before your next doctor's appointment.</h2>
+              <span class="read-more">Read article</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- SUBSCRIBE CTA -->
+  <section class="subscribe-cta">
+    <div class="subscribe-cta-inner">
+      <span class="subscribe-cta-eyebrow">Free Weekly Newsletter</span>
+      <h2>One practical AI tip. Every week.<br>No jargon. No overwhelm. Just real help.</h2>
+      <p class="subscribe-cta-sub">Join adults who are learning to use AI safely and confidently in real life.</p>
+      <form class="subscribe-cta-form" action="subscribe.html">
+        <input type="email" name="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="subscribe-cta-fine">Free forever. Unsubscribe any time. We never share your email.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; 2026 Morning Cup AI. All rights reserved.</span>
+      <ul class="footer-links">
+        <li><a href="/home">Home</a></li>
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div id="reading-progress" style="position:fixed;top:0;left:0;width:0%;height:3px;background:#2A3F55;z-index:9999;transition:width 0.1s ease;pointer-events:none;"></div>
+
+  <script src="nav.js"></script>
+  <script>
+    (function() {
+      var bar = document.getElementById('reading-progress');
+      if (!bar) return;
+      function updateProgress() {
+        if (window.innerWidth < 768) { bar.style.width = '0%'; return; }
+        var scrolled = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var total = Math.max(
+          document.body.scrollHeight,
+          document.documentElement.scrollHeight
+        ) - window.innerHeight;
+        bar.style.width = total > 0 ? Math.min(scrolled / total * 100, 100) + '%' : '0%';
+      }
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+      window.addEventListener('load', updateProgress);
+      updateProgress();
+    })();
+
+    function copyPrompt(btn) {
+      var text = btn.closest('.prompt-component').querySelector('.prompt-component-text').textContent.trim();
+      navigator.clipboard.writeText(text).then(function() {
+        btn.textContent = '✓ Copied!';
+        setTimeout(function() { btn.textContent = 'Copy Prompt'; }, 2000);
+      });
+    }
+
+    function copyLink(btn) {
+      navigator.clipboard.writeText('https://morningcupai.com/medicare-scam-call.html').then(function() {
+        btn.textContent = 'Copied!';
+        setTimeout(function() { btn.textContent = 'Copy link'; }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
