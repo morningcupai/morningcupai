@@ -836,10 +836,11 @@ article li {
 }
 
 .subscribe-cta-inner iframe,
-.subscribe-cta-inner > div[data-beehiiv-form],
-.subscribe-cta-inner > [class*="beehiiv"] {
-  display: block;
-  margin: 0 auto;
+.subscribe-cta-inner > div {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 100% !important;
 }
 
 @media (max-width: 540px) {
